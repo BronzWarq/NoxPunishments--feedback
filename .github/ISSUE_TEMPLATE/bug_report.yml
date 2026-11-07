@@ -1,0 +1,109 @@
+name: NoxPunishments bug report
+description: Report a reproducible problem with the Minecraft plugin.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public. Remove database credentials, tokens, private server addresses, player UUIDs, and personal information from all logs, configuration, and screenshots.
+  - type: input
+    id: summary
+    attributes:
+      label: Bug summary
+      description: Describe the problem in one sentence.
+      placeholder: Punishments are not synchronized between proxy servers
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Paper
+        - BungeeCord
+        - Waterfall
+        - Velocity
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: plugin_version
+    attributes:
+      label: NoxPunishments version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: platform_version
+    attributes:
+      label: Minecraft and server or proxy version
+      placeholder: Paper 1.21.4
+    validations:
+      required: true
+  - type: input
+    id: java_version
+    attributes:
+      label: Java version
+      placeholder: Java 21
+    validations:
+      required: false
+  - type: dropdown
+    id: storage
+    attributes:
+      label: Storage type
+      options:
+        - SQLite
+        - MySQL
+        - Not applicable
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that consistently trigger the problem.
+      placeholder: |
+        1. Run this command...
+        2. Join this server...
+        3. Observe the error...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: Explain what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: Explain what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste the smallest relevant excerpt after removing secrets and identifying information.
+    validations:
+      required: false
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Relevant configuration
+      description: Include only related settings. Replace passwords, addresses, tokens, and personal data with placeholders.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I removed secrets and identifying information from everything I attached.
+          required: true

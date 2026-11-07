@@ -1,0 +1,37 @@
+name: NoxPunishments question or setup help
+description: Ask about installation, configuration, permissions, or plugin usage.
+title: "[Question]: "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the README and documentation available with your plugin download first. Do not include database passwords, tokens, private server addresses, player UUIDs, or personal information.
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+      description: Describe your question and the result you are trying to achieve.
+    validations:
+      required: true
+  - type: input
+    id: plugin_version
+    attributes:
+      label: NoxPunishments version
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: input
+    id: platform
+    attributes:
+      label: Platform and version
+      placeholder: Paper 1.21.4, Velocity 3.4, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Include relevant commands or settings, with private values removed.
+    validations:
+      required: false

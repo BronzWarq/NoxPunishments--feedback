@@ -1,0 +1,51 @@
+name: NoxPunishments feature request
+description: Suggest a feature or improvement for the plugin.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Explain the problem or workflow this feature would improve. Search existing issues for similar requests first.
+  - type: input
+    id: summary
+    attributes:
+      label: Feature summary
+      placeholder: Add a way to filter the appeal queue by server
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to do, and what is difficult with the current behavior?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe how you expect the feature to work.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds
+      description: Mention any existing workaround or alternative you considered.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add examples or mockups, with private information removed.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true
