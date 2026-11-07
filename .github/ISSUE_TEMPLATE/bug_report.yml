@@ -105,5 +105,5 @@ body:
       options:
         - label: I searched existing issues for the same problem.
           required: true
-        - label: I removed secrets and identifying information from everything I attached.
+        - label: I confirm that this submission is accurate to the best of my knowledge and contains no secrets or private information.
           required: true

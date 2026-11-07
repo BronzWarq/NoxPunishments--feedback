@@ -35,3 +35,10 @@ body:
       description: Include relevant commands or settings, with private values removed.
     validations:
       required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm that this submission is accurate to the best of my knowledge and contains no secrets or private information.
+          required: true
