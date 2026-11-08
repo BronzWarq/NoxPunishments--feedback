@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Read the issue reporting guide
-    url: https://github.com/BronzWarq/NoxPunishments-Issues/blob/main/CONTRIBUTING.md
+    url: https://github.com/BronzWarq/NoxPunishments--feedback/blob/main/CONTRIBUTING.md
     about: Review the guidelines before opening a public issue.
   - name: Report a security concern privately
     url: https://github.com/BronzWarq
